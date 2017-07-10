@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+<link rel = "stylesheet" type="text/css" href="w3.css">
+<link rel = "stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width" />
+<title>Menu</title>
+</head>
+<body background="images/background2.jpg">
+
+
+<div class="w3-bar w3-light-grey">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a href="aboutUs.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+  <a href="press.html" class="w3-bar-item w3-button w3-mobile">Press</a>
+  <a href="contactUs.html" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+</div>
+<br> </br>
+<div class="w3-container w3-white myContainer rcorners" >
+<h2 style = "background-color:#f1f1f1"> Our Menu </h2>
+  <p >To see what Mockingbird Café has to offer, click on the menu categories below.</p>
+  <br></br>
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-green" onclick="openCity(event,'Drinks')">Drinks</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Breakfast');">Breakfast</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Lunch')">Lunch</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Dinner')">Dinner</button>
+     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Dessert')">Dessert</button>
+  </div>
+  
+  <div id="Drinks" class="w3-container w3-border city w3-animate-right">
+    <h2>Drinks</h2>
+    <table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Orange Juice...</p>
+    		</td>
+    		<td>
+    			 <p>2.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Freshly Brewed Coffee...</p>
+    		</td>
+    		<td>
+    			 <p>3.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Hot Chocolate...</p>
+    		</td>
+    		<td>
+    			 <p>3.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Soda...</p>
+    		</td>
+    		<td>
+    			 <p>2.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Milk Shake...</p>
+    		</td>
+    		<td>
+    			 <p>4.50</p>
+    		</td>
+    	</tr>
+    </table>
+    <br> </br>
+    <img src = "images/mockingbird.jpg">
+  </div>
+
+  <div id="Breakfast" class="w3-container w3-border city w3-animate-right" style="display:none">
+    <h2>Breakfast</h2>
+    <table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Waffles...</p>
+    		</td>
+    		<td>
+    			 <p>4.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Pancakes...</p>
+    		</td>
+    		<td>
+    			 <p>4.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Omelette...</p>
+    		</td>
+    		<td>
+    			 <p>3.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>French Toast...</p>
+    		</td>
+    		<td>
+    			 <p>4.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Eggs Benedict...</p>
+    		</td>
+    		<td>
+    			 <p>6.00</p>
+    		</td>
+    	</tr>
+    </table>
+    <div class="w3-content w3-section " style="width:60%">
+  <img class="breakfast w3-animate-right" src="images/waffles.jpg" style="width:100%">
+  <img class="breakfast w3-animate-right" src="images/eggs.jpg" style="width:100%">
+  <img class="breakfast w3-animate-right" src="images/pancakes.jpg" style="width:100%">
+	</div>
+  </div>
+
+  <div id="Lunch" class="w3-container w3-border city w3-animate-right" style="display:none">
+    <h2>Lunch</h2>
+	<button onclick="myFunction('Appetizers')" class="w3-button w3-block w3-left-align">
+	Appetizers</button>
+
+	<div id="Appetizers" class="w3-container w3-hide">
+  	<table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Mozzarella Sticks...</p>
+    		</td>
+    		<td>
+    			 <p>6.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Homemade Guacamole...</p>
+    		</td>
+    		<td>
+    			 <p>6.50</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Crab Cakes...</p>
+    		</td>
+    		<td>
+    			 <p>8.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Shrimp Platter...</p>
+    		</td>
+    		<td>
+    			 <p>12.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Fruit Salsa with Cinnamon...</p>
+    		</td>
+    		<td>
+    			 <p>6.00</p>
+    		</td>
+    	</tr>
+    </table>
+    
+  	</div>
+
+  	<button onclick="myFunction('Entrees')" class="w3-button w3-block w3-left-align">
+	Entrees</button>
+
+	<div id="Entrees" class="w3-container w3-hide">
+  <table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Burger with Fries...</p>
+    		</td>
+    		<td>
+    			 <p>9.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Linguini...</p>
+    		</td>
+    		<td>
+    			 <p>13.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>T-Bone Steak...</p>
+    		</td>
+    		<td>
+    			 <p>26.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Sauteed Shrimp Surprise...</p>
+    		</td>
+    		<td>
+    			 <p>12.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Lobster Sandwich...</p>
+    		</td>
+    		<td>
+    			 <p>13.00</p>
+    		</td>
+    	</tr>
+    </table>
+	</div>
+
+	
+	<div class="w3-content w3-section " style="width:60%">
+  <img class="lunch w3-animate-right" src="images/guac.jpg" style="width:100%">
+  <img class="lunch w3-animate-right" src="images/steak.jpg" style="width:100%">
+  <img class="lunch w3-animate-right" src="images/linguini.jpg" style="width:100%">
+  	</div>
+</div>
+
+ <div id="Dinner" class="w3-container w3-border city w3-animate-right" style="display:none">
+  <button onclick="myFunction('Apps')" class="w3-button w3-block w3-left-align">
+	Appetizers</button>
+
+	<div id="Apps" class="w3-container w3-hide">
+  	<table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Stuffed Mushrooms...</p>
+    		</td>
+    		<td>
+    			 <p>6.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Oyster Plate...</p>
+    		</td>
+    		<td>
+    			 <p>13.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Pot Pie...</p>
+    		</td>
+    		<td>
+    			 <p>10.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Shrimp Platter...</p>
+    		</td>
+    		<td>
+    			 <p>14.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Fruit Salsa with Cinnamon...</p>
+    		</td>
+    		<td>
+    			 <p>8.00</p>
+    		</td>
+    	</tr>
+    </table>
+    
+  	</div>
+
+  	<button onclick="myFunction('Ents')" class="w3-button w3-block w3-left-align">
+	Entrees</button>
+
+	<div id="Ents" class="w3-container w3-hide">
+  <table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Broiled Lobster Tails with Garlic and Chili Butter...</p>
+    		</td>
+    		<td>
+    			 <p>17.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Linguini...</p>
+    		</td>
+    		<td>
+    			 <p>13.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>T-Bone Steak...</p>
+    		</td>
+    		<td>
+    			 <p>26.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Sauteed Shrimp Surprise...</p>
+    		</td>
+    		<td>
+    			 <p>12.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Roasted Duck and Pork with Lentils...</p>
+    		</td>
+    		<td>
+    			 <p>18.00</p>
+    		</td>
+    	</tr>
+    </table>
+	</div>
+
+	
+	<div class="w3-content w3-section " style="width:60%">
+  <img class="dinner w3-animate-right" src="images/duck.jpg" style="width:100%">
+  <img class="dinner w3-animate-right" src="images/lobster.jpg" style="width:100%">
+  <img class="dinner w3-animate-right" src="images/shrimp.jpg" style="width:100%">
+  	</div>
+  </div>
+
+  <div id="Dessert" class="w3-container w3-border city w3-animate-right" style="display:none">
+    <h2>Dessert</h2>
+      <table class = "w3-table w3-striped w3-bordered" style = "font-size: 80%">
+    	<tr>
+    		<td>
+    			 <p>Broiled Lobster Tails with Garlic and Chili Butter...</p>
+    		</td>
+    		<td>
+    			 <p>17.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			 <p>Linguini...</p>
+    		</td>
+    		<td>
+    			 <p>13.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>T-Bone Steak...</p>
+    		</td>
+    		<td>
+    			 <p>26.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Sauteed Shrimp Surprise...</p>
+    		</td>
+    		<td>
+    			 <p>12.00</p>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    	<p>Roasted Duck and Pork with Lentils...</p>
+    		</td>
+    		<td>
+    			 <p>18.00</p>
+    		</td>
+    	</tr>
+    </table>
+	
+
+	
+	<div class="w3-content w3-section " style="width:60%">
+        <img  class="dessert w3-animate-right" src="images/brownie.jpg" style="width:100%">
+        <img  class="dessert w3-animate-right" src="images/key lime.jpg" style="width:100%">
+        <img  class="dessert w3-animate-right" src="images/dutch babies.jpg" style="width:100%">
+  	</div>
+  </div>
+</div>
+
+
+<script>
+
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-green";
+}
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+	var myIndex = 0;
+    rollBreakfast();
+    rollLunch();
+    rollDinner();
+    rollDessert();
+
+
+function rollBreakfast() {
+    var i;
+    var x = document.getElementsByClassName("breakfast");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(rollBreakfast, 3000); // Change image every 3 seconds
+}
+
+function rollLunch() {
+    var i;
+    var x = document.getElementsByClassName("lunch");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(rollLunch, 3000); // Change image every 3 seconds
+}
+
+function rollDinner() {
+    var i;
+    var x = document.getElementsByClassName("dinner");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(rollDinner, 3000); // Change image every 3 seconds
+}
+
+function rollDessert() {
+    var i;
+    var x = document.getElementsByClassName("dessert");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(rollDessert, 3000); // Change image every 3 seconds
+}
+
+
+</script>
+
+</body>
+    </html>

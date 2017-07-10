@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+<link rel = "stylesheet" type="text/css" href="w3.css">
+<link rel = "stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width" />
+<title>About Us</title>
+</head>
+<body background="images/background2.jpg">
+  <div class="w3-bar w3-light-grey">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a href="menu.html" class="w3-bar-item w3-button w3-mobile">Menu</a>
+  <a href="press.html" class="w3-bar-item w3-button w3-mobile">Press</a>
+  <a href="contactUs.html" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+</div>
+<h2 style = "background-color:#f1f1f1"> About Us </h2>
+<br></br>
+<div class="rcorners w3-container w3-white myContainer" >
+<p >
+Mockingbird Cafe owners Kathy and Tom West have been fixtures around the Somerset Hills for years. First known for their stylish catering at parties, they gained popularity on the a la carte dining scene while running the Limestone Cafe in Peapack.
+
+After the economy went south, the Wests went northeast, though only by a few miles. They downsized in August 2010 with the 11-table, 40-seat Mockingbird Cafe in the heart of Basking Ridge, on a corner that gets lots of foot traffic.
+</p>
+</div>
+<br> </br>
+<div class="rcorners w3-container w3-white myContainer" >
+<img class = "w3-animate-bottom" src = "images/cafe.jpg">
+<script>
+$( window ).load( function()
+{
+    var columns    = 3,
+        setColumns = function() { columns = $( window ).width() > 640 ? 3 : $( window ).width() > 320 ? 2 : 1; };
+ 
+    setColumns();
+    $( window ).resize( setColumns );
+ 
+    $( '#list' ).masonry(
+    {
+        itemSelector: '.item',
+        columnWidth:  function( containerWidth ) { return containerWidth / columns; }
+    });
+});
+</script>
+</div>
+
+    </body>
+    </html>

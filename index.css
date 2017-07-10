@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+h1 {
+	font-size: 9vw;
+	z-index: 10000;
+	text-align: center;
+	padding-top: 2%;
+	position: absolute;
+	width: 20%;
+	color: white;
+	font-family: 'Sansita', sans-serif;
+    text-shadow: -1px 0 rgb(37, 125, 163), 0 1px rgb(37, 125, 163), 1px 0 rgb(37, 125, 163), 0 -1px rgb(37, 125, 163);
+
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+h2 {
+	font-size: 4vw;
+	font-family: 'Sansita', sans-serif;
+	color: rgb(37, 125, 163);
+	padding-left: 10px;
+	}
+h3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 2.5vw;
+	text-align: center;
+	font-family: 'Sansita', sans-serif;
+	color: rgb(37, 125, 163);
+	
+	}
+table {
+	width:100%;
+	color:rgb(37, 125, 163);
+	font-size: 3vw;
+	padding: 2%;
+    text-decoration:none;
+}
+
+tr {
+	height: 40px;
+}
+
+a {
+	color: rgb(37, 125, 163);
+}
+
+p {
+	font-size: 100%;
+	color: black;
+	padding-top: 2%;
+}
+li {
+	text-align: center;
+	padding: 10px;
+	font-size: 5vw;
+}
+.w3-bar {
+	width:100%;overflow:hidden
+}
+.grayBackground {
+	background-color: rgb(220,220,220);
+}
+.slider {
+	overflow: hidden;
+	height: 30vw;
+}
+
+.slider figure div {
+	width: 20%;
+	float: left;
+
+}
+
+
+.slider figure  {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 45s slidy infinite;
+
+}
+
+@media only screen and (max-width: 767px) {
+	.phone-hidden {display: none !important;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .desktop-hidden {display: none !important;}
+
+}
+
+
+@keyframes slidy {
+	0% {
+		left: 0%;
+	}
+	10% {
+		left: 0%;
+	}
+	12% {
+		left: -100%;
+	}
+	22%
+	{
+		left: -100%;
+	}
+	24%
+	{
+		left: -200%;
+	}
+	34% {
+		left: -200%;
+	}
+	36% {
+		left: -300%;
+	}
+	46% {
+		left: -300%;
+	}
+	48% {
+		left: -400%;
+	}
+	58% {
+		left: -400%;
+	}
+	60% {
+		left: -300%;
+	}
+	70% {
+		left: -300%;
+	}
+	72% {
+		left: -200%;
+	}
+	82% {
+		left: -200%;
+	}
+	84% {
+		left: -100%;
+	}
+	94% {
+		left: -100%;
+	}
+	96% {
+		left: 0%;
+	}
+}
+	@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+.hvr-border-fade {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #FFFFFF, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+  box-shadow: inset 0 0 0 2px #96dae3, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+.flip-container:active .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.w3-animate-right{
+	-webkit-animation:animateright 0.8s;
+	animation::animateright 0.8s
+}
+.w3-bar .w3-button .mb-green {
+	background-color: #287c64;
+}
+.w3-bar .w3-button .mb-tan {
+	background-color: #b29549;
+}
+.myContainer {
+
+  width: 90% ;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.slider figure img {
+	width: 100%;
+	float:left;
+	filter: brightness(50%);
+}
+
+.rcorners {
+  -moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
