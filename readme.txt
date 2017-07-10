@@ -1,6 +1,8 @@
  Code downloaded from html-form-guide.com
  This code may be used and distributed freely without any charge.
 
+Added line
+
  Disclaimer
  ----------
  This file is provided "as is" with no expressed or implied warranty.
